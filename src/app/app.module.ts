@@ -7,22 +7,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from 'src/app/service/api.service';
 
 import { AppComponent } from './app.component';
-import { HomeComponent }  from './home/home.component';
 import { HeaderComponent }  from './header/header.component';
-import { AboutComponent }  from './about/about.component';
-import { LoginComponent } from './login/login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { GraCertComponent } from './gra-cert/gra-cert.component';
+import { SigninComponent } from './signin/signin.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 
 const appRoutes: Routes = [
   // { path: '', component: LoginComponent },
-  { path: 'login', component: LoginComponent },
+  { path: 'login', component: SigninComponent },
   {
     path: 'dashboard', component: HeaderComponent, 
     children: [
-      { path: 'home', component: HomeComponent },
-      { path: 'about', component: AboutComponent },
+      { path: 'home', component: HomepageComponent },
       { path: 'gra-certificate', component: GraCertComponent },
     ]
   },
@@ -31,14 +29,14 @@ const appRoutes: Routes = [
   { path: '**', redirectTo: '/login', pathMatch: 'full' }
 ];
 
+
 @NgModule({
   declarations: [
     AppComponent, 
-    HomeComponent, 
-    LoginComponent, 
+    HomepageComponent, 
     HeaderComponent, 
-    AboutComponent, 
-    GraCertComponent
+    GraCertComponent, 
+    SigninComponent, HomepageComponent
   ],
   imports: [
     BrowserModule,
@@ -55,4 +53,5 @@ const appRoutes: Routes = [
   providers: [ApiService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
