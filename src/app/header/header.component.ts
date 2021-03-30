@@ -18,9 +18,11 @@ export class HeaderComponent{
     redirectToHome() {
         this.router.navigateByUrl('dashboard/home');
     }
+
     redirectToAbout() {
         this.router.navigateByUrl('dashboard/about');
     }
+    
     logMeOut(){
         this.router.navigateByUrl('login');
     }

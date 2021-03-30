@@ -19,4 +19,6 @@ export class HomepageComponent implements OnInit {
   redirectToGRA() {
      this.router.navigateByUrl('dashboard/gra-certificate');
  }
+
+ 
 }

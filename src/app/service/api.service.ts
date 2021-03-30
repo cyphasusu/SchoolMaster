@@ -47,4 +47,6 @@ export class ApiService {
   return this.http.post(this.BaseUrl+'/customer/saveDB', payload, this.options);
   }
 
+  
+
 }

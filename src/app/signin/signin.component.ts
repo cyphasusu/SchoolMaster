@@ -12,7 +12,7 @@ import { ApiService } from '../service/api.service';
 
 export class SigninComponent implements OnInit {
 
-  submitButtonTitle = "Save";
+  submitButtonTitle = "Sign In";
   isLoading = false;
 
   payload={
@@ -36,29 +36,32 @@ export class SigninComponent implements OnInit {
     this.isLoading = true;
     this.submitButtonTitle = "Signing In...";
 
-    var payload = JSON.stringify(this.payload)
+    this.router.navigateByUrl('dashboard/home');
+
+    // var payload = JSON.stringify(this.payload)
+    // this.service.Login(payload).subscribe(data=>{
   
-    this.service.Login(payload).subscribe(data=>{
-  
-    if(data['responseCode'] === '000'){
+    // if(data['responseCode'] === '000'){
            
-      this.isLoading = false;
-      this.submitButtonTitle = "Sign In";
-      //this.showSuccess();
-      this.router.navigateByUrl('dashboard/home');
+    //   this.isLoading = false;
+    //   this.submitButtonTitle = "Sign In";
+    //   //this.showSuccess();
+    //   this.router.navigateByUrl('dashboard/home');
          
-    } else if(data['responseCode'] === '020'){
-        this.showWrongCredentials()
-        this.isLoading = false;
-        this.submitButtonTitle = "Sign In";
-    }
-     else {
-            this.showFailure()
-            this.isLoading = false;
-            this.submitButtonTitle = "Sign In";
-       }
+    // } else if(data['responseCode'] === '020'){
+    //     this.showWrongCredentials()
+    //     this.isLoading = false;
+    //     this.submitButtonTitle = "Sign In";
+    // }
+    //  else {
+    //         this.showFailure()
+    //         this.isLoading = false;
+    //         this.submitButtonTitle = "Sign In";
+    //    }
   
-    });
+    // });
+
+    
 
   };
 
