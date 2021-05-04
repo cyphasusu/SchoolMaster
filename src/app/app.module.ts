@@ -12,6 +12,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { GraCertComponent } from './gra-cert/gra-cert.component';
 import { SigninComponent } from './signin/signin.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { AddStudentComponent } from './add-student/add-student.component';
 
 
 const appRoutes: Routes = [
@@ -22,6 +23,7 @@ const appRoutes: Routes = [
     children: [
       { path: 'home', component: HomepageComponent },
       { path: 'gra-certificate', component: GraCertComponent },
+      { path: 'add-student', component: AddStudentComponent },
     ]
   },
   
@@ -36,7 +38,9 @@ const appRoutes: Routes = [
     HomepageComponent, 
     HeaderComponent, 
     GraCertComponent, 
-    SigninComponent, HomepageComponent
+    SigninComponent, 
+    HomepageComponent, 
+    AddStudentComponent
   ],
   imports: [
     BrowserModule,

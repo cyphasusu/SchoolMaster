@@ -1,0 +1,166 @@
+<section style="padding-right: 10px;padding-left: 10px;">
+  <section class="content-header">
+    <h1>
+        Add Student
+        
+    </h1>
+    <ol class="breadcrumb">
+        <li><a [routerLink]=""><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Add Student</li>
+    </ol>
+  </section>
+  <div class="box box-info">
+    <div class="box-header with-border">
+
+      <!-- Student Information-->
+      <form>
+        <div class="box-header with-border">
+          <h4 class="box-title" style="color:#3c8dbc"><b>Student Information</b></h4>
+
+
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body no-padding">
+
+          <!-- /.users-list -->
+        </div>
+        <!-- /.box-body -->
+
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <label for="studentID">Student ID</label>
+            <input type="text" class="form-control" id="studentID" placeholder=" ">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="surname">Surname</label>
+            <input type="text" class="form-control" id="surname" placeholder="">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="otherName">Other Name</label>
+            <input type="text" class="form-control" id="otherName" placeholder="">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="gender">Gender</label>
+            <select id="gender" class="form-control">
+              <option selected>Select</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <label for="DoB">Date of Birth</label>
+            <input type="date" class="form-control" id="DoB" placeholder="">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="religion">Religion</label>
+            <input type="text" class="form-control" id="religion" placeholder="">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="contact">Contact</label>
+            <input type="tel" class="form-control" id="contact" placeholder="">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email" placeholder="">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <label for="class">Class</label>
+            <select id="class" class="form-control">
+              <option selected>Select</option>
+              <option>Class 1</option>
+              <option>Class 2</option>
+              <option>Class 3</option>
+              <option>Class 4</option>
+              <option>Class 5</option>
+              <option>Class 6</option>
+              <option>JHS 1</option>
+              <option>JHS 2</option>
+              <option>JHS 3</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="DoA">Date of Admission</label>
+            <input type="date" class="form-control" id="DoA" placeholder="">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="passport">Passport Picture</label>
+            <input type="file" class="form-control" id="passport" placeholder="">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="medical_history">Medical History</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+
+          </div>
+        </div>
+<!--Guardian Information-->
+
+        <div class="form-row" style="padding: 10px;padding-bottom: 0px;padding-top: 10px;color:#3c8dbc">
+          <div class="card-body">
+            <h4 class="card-title"><b>Guardian Information</b></h4>
+            <hr style="height: 0.5px;border-width:0;background-color:#80808023;padding-bottom: 0px;">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <label for="guardian_name">Guardian Name</label>
+            <input type="text" class="form-control" id="guardian_name">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="guardian_contact">Guardian Contact</label>
+            <input type="tel" class="form-control" id="guardian_contact">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="guardian_email">Guardian Email</label>
+            <input type="email" class="form-control" id="guardian_email">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="guardian_occupation">Guardian Occupation</label>
+            <input type="text" class="form-control" id="guardian_occupation" placeholder="">
+          </div>
+        </div>
+        <div class="form-row">
+
+          <div class="form-group col-md-3">
+            <label for="guardian_photo">Guardian Photo</label>
+            <input type="file" class="form-control" id="guardian_photo">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="region">Region</label>
+            <select id="region" class="form-control">
+              <option selected>Select</option>
+              <option>Ashanti</option>
+              <option>Brong Ahafo</option>
+              <option>Central</option>
+              <option>Eastern</option>
+              <option>Greater Accra</option>
+              <option>Western</option>
+              <option>Northern</option>
+              <option>Upper East</option>
+              <option>Upper West</option>
+              <option>Volta</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="resident">Resident</label>
+            <input type="text" class="form-control" id="resident">
+          </div>
+
+          <div class="form-group col-md-3">
+            <label for="guardian_address">Guardian Address</label>
+            <textarea class="form-control" id="guardian_address" rows="1"></textarea>
+
+          </div>
+        </div>
+
+        <div style="padding-left: 20px;padding-right: 20px;padding-bottom: 20px;padding-top: 0px;">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+      
+    </div>
+  

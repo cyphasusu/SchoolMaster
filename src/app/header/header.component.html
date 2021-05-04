@@ -80,9 +80,9 @@
                     <a><i class="fa fa-circle text-success"></i> Online</a>
                 </div>
             </div>
-            <!-- search form -->
+           <!--<search form>-->
 
-            <!-- <form action="#" method="get" class="sidebar-form">
+            <form action="#" method="get" class="sidebar-form">
                 <div class="input-group">
                     <input type="text" name="q" class="form-control" placeholder="Search...">
                     <span class="input-group-btn">
@@ -91,7 +91,7 @@
                         </button>
                     </span>
                 </div>
-            </form> -->
+            </form> 
 
 
             <!-- /.search form -->
@@ -111,18 +111,128 @@
                         <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
                     </ul> -->
                 </li>
-                <li><a [routerLink]="" ><i class="fa fa-circle"></i> <span>Admin Managment</span></a></li>
-                <li><a [routerLink]="" ><i class="fa fa-circle"></i> <span>Classes & Sections</span></a></li>
-                <li><a [routerLink]="" ><i class="fa fa-circle"></i> <span>Students Management</span></a></li>
-                <li><a [routerLink]="" ><i class="fa fa-circle"></i> <span>Teachers Management</span></a></li>
-                <li><a [routerLink]="" ><i class="fa fa-circle"></i> <span>Parents Management</span></a></li>
+                   
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-male text-aqua"></i> Students Management  
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right text-aqua"></i>
+                        </span>
 
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="dashboard/add-student"><i class="fa fa-circle-o"></i> Add Student</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Update Student</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Student records</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Progress Report</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-users text-aqua"></i> HR & Staff Management
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right text-aqua"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Add Staff</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Update Staff</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Staff Records</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Staff Attendace</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Leave Management</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Payroll & Salary</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Promotion</a></li>
+                       
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-graduation-cap text-aqua"></i> Academic Managment 
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right text-aqua"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Time-table</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Lesson Planning</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Lesson Progress</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Classwork & Homework</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Exam Management</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Progress Report</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-book text-aqua"></i> Learning Management
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right text-aqua"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Quiz</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Assignment</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Analysis & Report</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Content Sharing</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-money text-aqua"></i> Fees & Finance Management 
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right text-aqua"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Fee Payment</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Fee Records</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Expense Management</a></li>
+                    </ul>
+                </li>
 
-                <!-- <li><a (click)="redirectToAbout()"><i class="fa fa-book"></i> <span>About Us</span></a></li>
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-sitemap text-aqua"></i> Resource Management
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right text-aqua"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Library</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Hostel</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Inventory</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Transport</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-volume-control-phone text-aqua"></i> Communication
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right text-aqua"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Annoucement</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Events & Activities</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Achievements</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Birthday Greetings</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Academic Calendar</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-line-chart text-aqua"></i> Report & Analysis
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right text-aqua"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Exams Report</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Attendance Report</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Fees Report</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Staff & HR Report</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Library Report</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Transport Report</a></li>
+                    </ul>
+                </li>
+             <!--  <li><a (click)="redirectToAbout()"><i class="fa fa-book"></i> <span>About Us</span></a></li>
                 <li><a (click)="logMeOut()"><i class="fa fa-th"></i> <span>Log-Out</span></a></li> -->
-    
-                
-                <!-- <li class="treeview">
+              
+                <li class="header"><i class=""> </i><span> Admin Management</span> </li>
+                <li><a href="#">&nbsp;&nbsp;&nbsp;<i class="fa fa-circle-o text-red"></i> <span >Important</span></a></li>
+              <!--
+                <li class="treeview">
                     <a>
                         <i class="fa fa-files-o"></i>
                         <span>Layout Options</span>
