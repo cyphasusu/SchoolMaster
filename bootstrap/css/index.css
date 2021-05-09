@@ -1,0 +1,143 @@
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+#wb_Carousel1
+{
+   background-color: transparent;
+   background-image: none;
+}
+#Carousel1 .frame
+{
+   width: 1032px;
+   display: inline-block;
+   float: left;
+   height: 604px;
+}
+#MediaPlayer1
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayer2
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayer3
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayer4
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_uid1
+{
+   cursor: pointer;
+}
+#wb_MediaPlayer1
+{
+   position: absolute;
+   left: 79px;
+   top: 29px;
+   width: 874px;
+   height: 491px;
+   z-index: 0;
+}
+#wb_uid2
+{
+   border-width: 0;
+}
+#wb_MediaPlayer2
+{
+   position: absolute;
+   left: 1111px;
+   top: 30px;
+   width: 874px;
+   height: 491px;
+   z-index: 1;
+}
+#wb_uid3
+{
+   cursor: pointer;
+}
+#Carousel1_next
+{
+   position: absolute;
+   right: 2px;
+   top: 45%;
+   width: 60px;
+   height: 60px;
+   z-index: 999;
+}
+#wb_MediaPlayer3
+{
+   position: absolute;
+   left: 2143px;
+   top: 30px;
+   width: 874px;
+   height: 491px;
+   z-index: 2;
+}
+#wb_uid4
+{
+   border-width: 0;
+}
+#wb_MediaPlayer4
+{
+   position: absolute;
+   left: 3175px;
+   top: 30px;
+   width: 874px;
+   height: 491px;
+   z-index: 3;
+}
+#Carousel1_back
+{
+   position: absolute;
+   left: 2px;
+   top: 45%;
+   width: 60px;
+   height: 60px;
+   z-index: 999;
+}
+#wb_Carousel1
+{
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 1032px;
+   height: 604px;
+   z-index: 5;
+   overflow: hidden;
+}
+#Carousel1
+{
+   position: absolute;
+}
+#wb_uid0
+{
+   position: absolute;
+   left: 441px;
+   top: 967px;
+   border-width: 0;
+   z-index: 250;
+}

@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { GraCertComponent } from './gra-cert.component';
 
@@ -6,7 +6,7 @@ describe('GraCertComponent', () => {
   let component: GraCertComponent;
   let fixture: ComponentFixture<GraCertComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ GraCertComponent ]
     })

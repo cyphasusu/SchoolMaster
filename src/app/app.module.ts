@@ -13,6 +13,8 @@ import { GraCertComponent } from './gra-cert/gra-cert.component';
 import { SigninComponent } from './signin/signin.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AddStudentComponent } from './add-student/add-student.component';
+import { UpdateStudentComponent } from './update-student/update-student.component';
+import { StudentRecordsComponent } from './student-records/student-records.component';
 
 
 const appRoutes: Routes = [
@@ -24,6 +26,8 @@ const appRoutes: Routes = [
       { path: 'home', component: HomepageComponent },
       { path: 'gra-certificate', component: GraCertComponent },
       { path: 'add-student', component: AddStudentComponent },
+      { path: 'update-student', component: UpdateStudentComponent },
+      { path: 'student-records', component: StudentRecordsComponent },
     ]
   },
   
@@ -40,7 +44,9 @@ const appRoutes: Routes = [
     GraCertComponent, 
     SigninComponent, 
     HomepageComponent, 
-    AddStudentComponent
+    AddStudentComponent, 
+    UpdateStudentComponent, 
+    StudentRecordsComponent
   ],
   imports: [
     BrowserModule,
@@ -52,10 +58,12 @@ const appRoutes: Routes = [
       positionClass: "toast-top-right",
       preventDuplicates: true
     }),
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes, { relativeLinkResolution: 'legacy' })
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]
 })
 
 export class AppModule { }
+
+
